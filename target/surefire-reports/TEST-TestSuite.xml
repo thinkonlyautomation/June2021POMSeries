@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.389" tests="23" errors="0" skipped="9" failures="3">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20210129-0849\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="D:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="D:\Learning\Naveen\June2021POMSeries\EMBEDDED"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\dkris"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="D:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="dkris"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\dkris\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="D:\Learning\Naveen\June2021POMSeries"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Learning\Naveen\June2021POMSeries"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;D:/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jre1.8.0_291\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\dkris\AppData\Local\Android\Sdk\platform-tools;C:\Users\dkris\AppData\Local\Android\Sdk\tools;C:\Users\dkris\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.2\bin;C:\Program Files (x86)\GitExtensions\;C:\Users\dkris\scoop\shims;C:\Users\dkris\AppData\Local\Microsoft\WindowsApps;C:\Users\dkris\AppData\Roaming\npm;D:\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="classworlds.conf" value="C:\Users\dkris\MyWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16545158524347136574.tmp"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.173"/>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSuccess method loginPageTitleTest succeed
+loginPageTitleTest passed!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+lp header is: Your Store
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+lp header is: Your Store
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+lp header is: Your Store
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.196">
+    <failure message="....Header is not matched.... expected [Your Store11] but found [Your Store]" type="java.lang.AssertionError">java.lang.AssertionError: ....Header is not matched.... expected [Your Store11] but found [Your Store]
+	at com.qa.opencart.tests.LoginPageTest.loginPageHeaderTest(LoginPageTest.java:38)
+</failure>
+    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+lp header is: Your Store
+I am in onTestFailure method loginPageHeaderTest failed
+Screenshot captured for test case:loginPageHeaderTest
+]]></system-out>
+  </testcase>
+  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
+    <system-out><![CDATA[I am in onTestFailure method loginPageHeaderTest failed
+Screenshot captured for test case:loginPageHeaderTest
+loginPageHeaderTest failed!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestStart method forgotPwdLinkTest start
+forgotPwdLinkTest started!
+I am in onTestSkipped method forgotPwdLinkTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
+    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestStart method forgotPwdLinkTest start
+forgotPwdLinkTest started!
+I am in onTestSkipped method forgotPwdLinkTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
+    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestStart method forgotPwdLinkTest start
+forgotPwdLinkTest started!
+I am in onTestSkipped method forgotPwdLinkTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.178">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='form-group']//a[text()='Forgotten Password11']"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a706e8230d387ef6d57a180c45a2603d
+*** Element info: {Using=xpath, value=//div[@class='form-group']//a[text()='Forgotten Password11']}
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkTest(LoginPageTest.java:45)
+</failure>
+    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestStart method forgotPwdLinkTest start
+forgotPwdLinkTest started!
+I am in onTestFailure method forgotPwdLinkTest failed
+Screenshot captured for test case:forgotPwdLinkTest
+]]></system-out>
+  </testcase>
+  <testcase name="accPageTitleTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.015"/>
+  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
+    <skipped message="expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSuccess method accPageTitleTest succeed
+accPageTitleTest passed!
+I am in onTestStart method accPageHeaderTest start
+I am in onTestStart method accPageHeaderTest start
+accPageHeaderTest started!
+acc page header is: Your Store
+I am in onTestSkipped method accPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
+    <skipped message="expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
+accPageHeaderTest skipped!
+I am in onTestStart method accPageHeaderTest start
+I am in onTestStart method accPageHeaderTest start
+accPageHeaderTest started!
+acc page header is: Your Store
+I am in onTestSkipped method accPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
+    <skipped message="expected [Your Store11] but found [Your Store]"/>
+    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
+accPageHeaderTest skipped!
+I am in onTestStart method accPageHeaderTest start
+I am in onTestStart method accPageHeaderTest start
+accPageHeaderTest started!
+acc page header is: Your Store
+I am in onTestSkipped method accPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.161">
+    <failure message="expected [Your Store11] but found [Your Store]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Your Store11] but found [Your Store]
+	at com.qa.opencart.tests.AccountsPageTest.accPageHeaderTest(AccountsPageTest.java:46)
+</failure>
+    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
+accPageHeaderTest skipped!
+I am in onTestStart method accPageHeaderTest start
+I am in onTestStart method accPageHeaderTest start
+accPageHeaderTest started!
+acc page header is: Your Store
+I am in onTestFailure method accPageHeaderTest failed
+Screenshot captured for test case:accPageHeaderTest
+]]></system-out>
+  </testcase>
+  <testcase name="accSectionsListTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.068"/>
+  <testcase name="logoutLinkExistTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.065"/>
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.963"/>
+  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.285"/>
+  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.49"/>
+  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.216"/>
+  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="6.117"/>
+  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="3.57"/>
+  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="4.691"/>
+</testsuite>

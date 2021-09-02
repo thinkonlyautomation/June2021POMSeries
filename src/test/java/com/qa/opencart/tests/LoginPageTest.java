@@ -20,7 +20,7 @@ import io.qameta.allure.Story;
 @Listeners(TestAllureListener.class)
 public class LoginPageTest extends BaseTest {
 
-	@Description("login page title test.....")
+	@Description("login page title test case.....")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void loginPageTitleTest() {

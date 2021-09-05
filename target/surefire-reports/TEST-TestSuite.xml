@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.389" tests="23" errors="0" skipped="9" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="37.086" tests="18" errors="0" skipped="13" failures="5">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -51,166 +51,275 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
-    <property name="classworlds.conf" value="C:\Users\dkris\MyWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16545158524347136574.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\dkris\MyWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15418044114060344470.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.173"/>
-  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSuccess method loginPageTitleTest succeed
-loginPageTitleTest passed!
-I am in onTestStart method loginPageHeaderTest start
-I am in onTestStart method loginPageHeaderTest start
-loginPageHeaderTest started!
-lp header is: Your Store
-I am in onTestSkipped method loginPageHeaderTest skipped
-]]></system-out>
-  </testcase>
-  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
-loginPageHeaderTest skipped!
-I am in onTestStart method loginPageHeaderTest start
-I am in onTestStart method loginPageHeaderTest start
-loginPageHeaderTest started!
-lp header is: Your Store
-I am in onTestSkipped method loginPageHeaderTest skipped
-]]></system-out>
-  </testcase>
-  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="....Header is not matched.... expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
-loginPageHeaderTest skipped!
-I am in onTestStart method loginPageHeaderTest start
-I am in onTestStart method loginPageHeaderTest start
-loginPageHeaderTest started!
-lp header is: Your Store
-I am in onTestSkipped method loginPageHeaderTest skipped
-]]></system-out>
-  </testcase>
-  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.196">
-    <failure message="....Header is not matched.... expected [Your Store11] but found [Your Store]" type="java.lang.AssertionError">java.lang.AssertionError: ....Header is not matched.... expected [Your Store11] but found [Your Store]
-	at com.qa.opencart.tests.LoginPageTest.loginPageHeaderTest(LoginPageTest.java:38)
+  <testcase name="accPageSetup" classname="com.qa.opencart.tests.AccountsPageTest" time="0.54">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fbea56c4d8dc4f8fd5dbf1cbf79e3415&#10;*** Element info: {Using=id, value=input-email}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbea56c4d8dc4f8fd5dbf1cbf79e3415
+*** Element info: {Using=id, value=input-email}
+	at com.qa.opencart.tests.AccountsPageTest.accPageSetup(AccountsPageTest.java:28)
 </failure>
-    <system-out><![CDATA[I am in onTestSkipped method loginPageHeaderTest skipped
-loginPageHeaderTest skipped!
-I am in onTestStart method loginPageHeaderTest start
-I am in onTestStart method loginPageHeaderTest start
+    <system-out><![CDATA[...
+... TestNG 6.14.3 by Cédric Beust (cedric@beust.com)
+...
+
+I am in onStart method Accounts Page Test
+I am in onStart method Login Page Test
+Test Suite started!
+I am in onStart method Accounts Page Test
+Test Suite started!
+I am in onStart method Login Page Test
+browser name is : chrome
+browser name is : chrome
+I am in onTestStart method loginPageTitleTest start
+loginPageTitleTest started!
+I am in onTestStart method loginPageTitleTest start
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 9144
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 22483
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions oChromeDriver was started successfully.
+n keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 02, 2021 11:46:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 02, 2021 11:46:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="tearDown" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[I am in onTestSkipped method accPageTitleTest skipped
+accPageTitleTest skipped!
+I am in onTestFailure method accPageTitleTest failed
+Screenshot captured for test case:accPageTitleTest
+accPageTitleTest failed!
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="Expected condition failed: waiting for title to be &quot;Account Login&quot;. Current title: &quot;Just a moment...&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2"/>
+    <system-out><![CDATA[I am in onFinish method Accounts Page Test
+Test Suite is ending!
+I am in onFinish method Accounts Page Test
+I am in onTestSkipped method loginPageTitleTest skipped
+loginPageTitleTest skipped!
+I am in onTestSkipped method loginPageTitleTest skipped
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="Expected condition failed: waiting for title to be &quot;Account Login&quot;. Current title: &quot;Just a moment...&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2"/>
+    <system-out><![CDATA[I am in onTestStart method loginPageTitleTest start
+loginPageTitleTest started!
+I am in onTestStart method loginPageTitleTest start
+I am in onTestSkipped method loginPageTitleTest skipped
+loginPageTitleTest skipped!
+I am in onTestSkipped method loginPageTitleTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="Expected condition failed: waiting for title to be &quot;Account Login&quot;. Current title: &quot;Just a moment...&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2"/>
+    <system-out><![CDATA[I am in onTestStart method loginPageTitleTest start
+loginPageTitleTest started!
+I am in onTestStart method loginPageTitleTest start
+I am in onTestSkipped method loginPageTitleTest skipped
+loginPageTitleTest skipped!
+I am in onTestSkipped method loginPageTitleTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.tests.LoginPageTest" time="6.533">
+    <failure message="Expected condition failed: waiting for title to be &quot;Account Login&quot;. Current title: &quot;Just a moment...&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for title to be "Account Login". Current title: "Just a moment..." (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f0f942d7dcc7944a2b9327390fc52c2
+	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:27)
+</failure>
+    <system-out><![CDATA[I am in onTestStart method loginPageTitleTest start
+loginPageTitleTest started!
+I am in onTestStart method loginPageTitleTest start
+I am in onTestFailure method loginPageTitleTest failed
+Screenshot captured for test case:loginPageTitleTest
+loginPageTitleTest failed!
+I am in onTestFailure method loginPageTitleTest failed
+Screenshot captured for test case:loginPageTitleTest
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#logo h1 a&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=css selector, value=div#logo h1 a}"/>
+    <system-out><![CDATA[I am in onTestStart method loginPageHeaderTest start
 loginPageHeaderTest started!
-lp header is: Your Store
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#logo h1 a&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=css selector, value=div#logo h1 a}"/>
+    <system-out><![CDATA[I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#logo h1 a&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=css selector, value=div#logo h1 a}"/>
+    <system-out><![CDATA[I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestSkipped method loginPageHeaderTest skipped
+loginPageHeaderTest skipped!
+I am in onTestSkipped method loginPageHeaderTest skipped
+]]></system-out>
+  </testcase>
+  <testcase name="loginPageHeaderTest" classname="com.qa.opencart.tests.LoginPageTest" time="1.482">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div#logo h1 a&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=css selector, value=div#logo h1 a}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div#logo h1 a"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f0f942d7dcc7944a2b9327390fc52c2
+*** Element info: {Using=css selector, value=div#logo h1 a}
+	at com.qa.opencart.tests.LoginPageTest.loginPageHeaderTest(LoginPageTest.java:36)
+</failure>
+    <system-out><![CDATA[I am in onTestStart method loginPageHeaderTest start
+loginPageHeaderTest started!
+I am in onTestStart method loginPageHeaderTest start
+I am in onTestFailure method loginPageHeaderTest failed
+Screenshot captured for test case:loginPageHeaderTest
+loginPageHeaderTest failed!
 I am in onTestFailure method loginPageHeaderTest failed
 Screenshot captured for test case:loginPageHeaderTest
 ]]></system-out>
   </testcase>
   <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
-    <system-out><![CDATA[I am in onTestFailure method loginPageHeaderTest failed
-Screenshot captured for test case:loginPageHeaderTest
-loginPageHeaderTest failed!
-I am in onTestStart method forgotPwdLinkTest start
-I am in onTestStart method forgotPwdLinkTest start
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]}"/>
+    <system-out><![CDATA[I am in onTestStart method forgotPwdLinkTest start
 forgotPwdLinkTest started!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
 I am in onTestSkipped method forgotPwdLinkTest skipped
 ]]></system-out>
   </testcase>
   <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
-    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
-forgotPwdLinkTest skipped!
-I am in onTestStart method forgotPwdLinkTest start
-I am in onTestStart method forgotPwdLinkTest start
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]}"/>
+    <system-out><![CDATA[I am in onTestStart method forgotPwdLinkTest start
 forgotPwdLinkTest started!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
 I am in onTestSkipped method forgotPwdLinkTest skipped
 ]]></system-out>
   </testcase>
   <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
-    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}"/>
-    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
-forgotPwdLinkTest skipped!
-I am in onTestStart method forgotPwdLinkTest start
-I am in onTestStart method forgotPwdLinkTest start
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]}"/>
+    <system-out><![CDATA[I am in onTestStart method forgotPwdLinkTest start
 forgotPwdLinkTest started!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestSkipped method forgotPwdLinkTest skipped
+forgotPwdLinkTest skipped!
 I am in onTestSkipped method forgotPwdLinkTest skipped
 ]]></system-out>
   </testcase>
-  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.178">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.159)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a706e8230d387ef6d57a180c45a2603d&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password11&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='form-group']//a[text()='Forgotten Password11']"}
-  (Session info: chrome=92.0.4515.159)
+  <testcase name="forgotPwdLinkTest" classname="com.qa.opencart.tests.LoginPageTest" time="1.101">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;form-group&apos;]//a[text()=&apos;Forgotten Password&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='form-group']//a[text()='Forgotten Password']"}
+  (Session info: chrome=93.0.4577.63)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a706e8230d387ef6d57a180c45a2603d
-*** Element info: {Using=xpath, value=//div[@class='form-group']//a[text()='Forgotten Password11']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f0f942d7dcc7944a2b9327390fc52c2
+*** Element info: {Using=xpath, value=//div[@class='form-group']//a[text()='Forgotten Password']}
 	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkTest(LoginPageTest.java:45)
 </failure>
-    <system-out><![CDATA[I am in onTestSkipped method forgotPwdLinkTest skipped
-forgotPwdLinkTest skipped!
-I am in onTestStart method forgotPwdLinkTest start
-I am in onTestStart method forgotPwdLinkTest start
+    <system-out><![CDATA[I am in onTestStart method forgotPwdLinkTest start
 forgotPwdLinkTest started!
+I am in onTestStart method forgotPwdLinkTest start
+I am in onTestFailure method forgotPwdLinkTest failed
+Screenshot captured for test case:forgotPwdLinkTest
+forgotPwdLinkTest failed!
 I am in onTestFailure method forgotPwdLinkTest failed
 Screenshot captured for test case:forgotPwdLinkTest
 ]]></system-out>
   </testcase>
-  <testcase name="accPageTitleTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.015"/>
-  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
-    <skipped message="expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSuccess method accPageTitleTest succeed
-accPageTitleTest passed!
-I am in onTestStart method accPageHeaderTest start
-I am in onTestStart method accPageHeaderTest start
-accPageHeaderTest started!
-acc page header is: Your Store
-I am in onTestSkipped method accPageHeaderTest skipped
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=id, value=input-email}"/>
+    <system-out><![CDATA[I am in onTestStart method loginTest start
+loginTest started!
+I am in onTestStart method loginTest start
+I am in onTestSkipped method loginTest skipped
+loginTest skipped!
+I am in onTestSkipped method loginTest skipped
 ]]></system-out>
   </testcase>
-  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
-    <skipped message="expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
-accPageHeaderTest skipped!
-I am in onTestStart method accPageHeaderTest start
-I am in onTestStart method accPageHeaderTest start
-accPageHeaderTest started!
-acc page header is: Your Store
-I am in onTestSkipped method accPageHeaderTest skipped
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=id, value=input-email}"/>
+    <system-out><![CDATA[I am in onTestStart method loginTest start
+loginTest started!
+I am in onTestStart method loginTest start
+I am in onTestSkipped method loginTest skipped
+loginTest skipped!
+I am in onTestSkipped method loginTest skipped
 ]]></system-out>
   </testcase>
-  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0">
-    <skipped message="expected [Your Store11] but found [Your Store]"/>
-    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
-accPageHeaderTest skipped!
-I am in onTestStart method accPageHeaderTest start
-I am in onTestStart method accPageHeaderTest start
-accPageHeaderTest started!
-acc page header is: Your Store
-I am in onTestSkipped method accPageHeaderTest skipped
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=id, value=input-email}"/>
+    <system-out><![CDATA[I am in onTestStart method loginTest start
+loginTest started!
+I am in onTestStart method loginTest start
+I am in onTestSkipped method loginTest skipped
+loginTest skipped!
+I am in onTestSkipped method loginTest skipped
 ]]></system-out>
   </testcase>
-  <testcase name="accPageHeaderTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.161">
-    <failure message="expected [Your Store11] but found [Your Store]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Your Store11] but found [Your Store]
-	at com.qa.opencart.tests.AccountsPageTest.accPageHeaderTest(AccountsPageTest.java:46)
+  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.847">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}&#10;  (Session info: chrome=93.0.4577.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DEVKANT-DELL&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3f0f942d7dcc7944a2b9327390fc52c2&#10;*** Element info: {Using=id, value=input-email}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DEVKANT-DELL', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\dkris\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f0f942d7dcc7944a2b9327390fc52c2
+*** Element info: {Using=id, value=input-email}
+	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:52)
 </failure>
-    <system-out><![CDATA[I am in onTestSkipped method accPageHeaderTest skipped
-accPageHeaderTest skipped!
-I am in onTestStart method accPageHeaderTest start
-I am in onTestStart method accPageHeaderTest start
-accPageHeaderTest started!
-acc page header is: Your Store
-I am in onTestFailure method accPageHeaderTest failed
-Screenshot captured for test case:accPageHeaderTest
+    <system-out><![CDATA[I am in onTestStart method loginTest start
+loginTest started!
+I am in onTestStart method loginTest start
+I am in onTestFailure method loginTest failed
+Screenshot captured for test case:loginTest
+loginTest failed!
+I am in onTestFailure method loginTest failed
+Screenshot captured for test case:loginTest
 ]]></system-out>
   </testcase>
-  <testcase name="accSectionsListTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.068"/>
-  <testcase name="logoutLinkExistTest" classname="com.qa.opencart.tests.AccountsPageTest" time="0.065"/>
-  <testcase name="loginTest" classname="com.qa.opencart.tests.LoginPageTest" time="0.963"/>
-  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.285"/>
-  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.49"/>
-  <testcase name="searchTest" classname="com.qa.opencart.tests.AccountsPageTest" time="2.216"/>
-  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="6.117"/>
-  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="3.57"/>
-  <testcase name="selectProductTest" classname="com.qa.opencart.tests.AccountsPageTest" time="4.691"/>
 </testsuite>
